@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/regular.css" />
+    <title>TailwindCSS Test</title>
+  </head>
+  <body class="max-w-7xl m-auto">
+    <!-- News Section -->
+    <div
+      class="hidden relative sm:flex px-4 h-10 bg-blue-800 justify-between items-center text-sm text-neutral-50"
+    >
+      <div><i class="fa-solid fa-store mr-2"></i>Sell on Oshoffa Market</div>
+      <ul id="headline" class="headline-list hidden md:block">
+        <li>50% Discount on Fashion Items | Nov 9th - Dec 1st</li>
+        <li>Flash sales starts next week</li>
+        <li>Black Friday 4th Nov - 12th Nov</li>
+        <li>Thrift comes up during the harvest</li>
+        <li>10% Cashback on goods worth over $500</li>
+      </ul>
+      <div class="flex items-center justify-center gap-1 flex-wrap">
+        Need Help ? Call us
+        <i class="mx-1 fa-solid fa-headset"></i>:
+        <span class="font-bold text-lg">08140642443</span>
+      </div>
+    </div>
+    <!-- Start Mobile Menu-->
+    <div
+      class="relative z-40 lg:hidden -translate-x-full transition ease-in-out duration-300"
+      id="sidebar"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="fixed inset-0 bg-black bg-opacity-25"></div>
+      <div class="fixed inset-0 z-40 flex bottom-0">
+        <div
+          class="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl"
+        >
+          <div class="flex px-4 pb-2 pt-5">
+            <button
+              id="closeSidebar"
+              type="button"
+              class="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Links -->
+          <div class="space-y-4 border-t border-b border-gray-200 px-4 py-6">
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                ><i class="fa-regular fa-user mr-2"></i>My Account</a
+              >
+            </div>
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                ><i class="fa-regular fa-envelope mr-2"></i> Inbox</a
+              >
+            </div>
+          </div>
+          <div class="space-y-4 p-4">
+            <div>
+              <p
+                id="men-clothing-heading-mobile"
+                class="font-medium text-gray-900"
+              >
+                Clothing
+              </p>
+              <ul
+                role="list"
+                aria-labelledby="men-clothing-heading-mobile"
+                class="mt-4 flex flex-col space-y-4"
+              >
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Tops</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Pants</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Sweaters</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">T-Shirts</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Jackets</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Activewear</a
+                  >
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Browse All</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                id="men-accessories-heading-mobile"
+                class="font-medium text-gray-900"
+              >
+                Accessories
+              </p>
+              <ul
+                role="list"
+                aria-labelledby="men-accessories-heading-mobile"
+                class="mt-6 flex flex-col space-y-4"
+              >
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Watches</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Wallets</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Bags</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Sunglasses</a
+                  >
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Hats</a>
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">Belts</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                id="men-brands-heading-mobile"
+                class="font-medium text-gray-900"
+              >
+                Brands
+              </p>
+              <ul
+                role="list"
+                aria-labelledby="men-brands-heading-mobile"
+                class="mt-6 flex flex-col space-y-4"
+              >
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Re-Arranged</a
+                  >
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Counterfeit</a
+                  >
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500"
+                    >Full Nelson</a
+                  >
+                </li>
+                <li class="flow-root">
+                  <a href="#" class="-m-2 block p-2 text-gray-500">My Way</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="space-y-4 border-t border-gray-200 px-4 py-6">
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                >Marketplace</a
+              >
+            </div>
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                >Harvest</a
+              >
+            </div>
+          </div>
+          <div class="space-y-4 border-t border-gray-200 px-4 py-6">
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                >Sign in</a
+              >
+            </div>
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900"
+                >Create account</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile Menu -->
+
+    <!-- Header Section -->
+    <header class="sticky top-0 bg-white z-10">
+      <nav aria-label="Top" class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="border-b border-gray-200">
+          <div class="flex h-16 items-center">
+            <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
+            <button
+              type="button"
+              id="menuToggle"
+              class="relative cursor-pointer rounded-md bg-white p-2 text-gray-400 lg:hidden"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+
+            <!-- Logo -->
+            <div class="ml-2 sm:ml-4 flex lg:ml-0">
+              <a href="#">
+                <span class="sr-only">Company Logo</span>
+                <img
+                  class="h-12 w-auto"
+                  src="assets/images/logosmall.png"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <!-- Nav menus -->
+            <div class="hidden lg:ml-8 lg:block lg:self-stretch">
+              <div class="flex h-full space-x-8">
+                <div class="flex">
+                  <div class="relative flex">
+                    <button
+                      type="button"
+                      class="border-transparent border-b-3t text-gray-700 hover:text-gray-800 relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out active"
+                      aria-expanded="false"
+                    >
+                      Home
+                    </button>
+                  </div>
+                </div>
+                <div class="flex dropdown">
+                  <div class="relative flex">
+                    <!-- Item active: "border-indigo-600 text-indigo-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
+                    <button
+                      type="button"
+                      class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                      aria-expanded="false"
+                    >
+                      Marketplace
+                    </button>
+                  </div>
+                  <div
+                    class="dropdown-content absolute inset-x-0 top-full text-sm text-gray-500"
+                  >
+                    <div
+                      class="absolute inset-0 top-1/2 bg-white shadow"
+                      aria-hidden="true"
+                    ></div>
+
+                    <div class="relative bg-white">
+                      <div class="mx-auto px-8">
+                        <div class="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                          <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                            <div class="group relative text-base sm:text-sm">
+                              <div
+                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75"
+                              >
+                                <img
+                                  src="assets/images/model.webp"
+                                  alt="Models sitting back to back, wearing Basic Tee in black and bone."
+                                  class="object-cover object-center"
+                                />
+                              </div>
+                              <a
+                                href="#"
+                                class="mt-6 block font-medium text-gray-900"
+                              >
+                                <span
+                                  class="absolute inset-0 z-10"
+                                  aria-hidden="true"
+                                ></span>
+                                New Arrivals
+                              </a>
+                              <p aria-hidden="true" class="mt-1">Shop now</p>
+                            </div>
+                            <div class="group relative text-base sm:text-sm">
+                              <div
+                                class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75"
+                              >
+                                <img
+                                  src="assets/images/model3.webp"
+                                  alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees."
+                                  class="object-cover object-center"
+                                />
+                              </div>
+                              <a
+                                href="#"
+                                class="mt-6 block font-medium text-gray-900"
+                              >
+                                <span
+                                  class="absolute inset-0 z-10"
+                                  aria-hidden="true"
+                                ></span>
+                                Basic Tees
+                              </a>
+                              <p aria-hidden="true" class="mt-1">Shop now</p>
+                            </div>
+                          </div>
+                          <div
+                            class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm"
+                          >
+                            <div>
+                              <p
+                                id="Clothing-heading"
+                                class="font-medium text-gray-900"
+                              >
+                                Clothing
+                              </p>
+                              <ul
+                                role="list"
+                                aria-labelledby="Clothing-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                              >
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Tops</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Dresses</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Pants</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Denim</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Sweaters</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >T-Shirts</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Jackets</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Activewear</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Browse All</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p
+                                id="Accessories-heading"
+                                class="font-medium text-gray-900"
+                              >
+                                Accessories
+                              </p>
+                              <ul
+                                role="list"
+                                aria-labelledby="Accessories-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                              >
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Watches</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Wallets</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Bags</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Sunglasses</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Hats</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Belts</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <p
+                                id="Brands-heading"
+                                class="font-medium text-gray-900"
+                              >
+                                Brands
+                              </p>
+                              <ul
+                                role="list"
+                                aria-labelledby="Brands-heading"
+                                class="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                              >
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Full Nelson</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >My Way</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Re-Arranged</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Counterfeit</a
+                                  >
+                                </li>
+                                <li class="flex">
+                                  <a href="#" class="hover:text-gray-800"
+                                    >Significant Other</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >Harvest</a
+                >
+              </div>
+            </div>
+
+            <div class="ml-auto flex items-center">
+              <div
+                class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
+              >
+                <a
+                  href="signup.html"
+                  class="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >Sign in</a
+                >
+                <span class="h-6 w-px bg-gray-200" aria-hidden="true"></span>
+                <a
+                  href="login.html"
+                  class="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >Create account</a
+                >
+              </div>
+
+              <div class="hidden lg:ml-8 lg:flex">
+                <a
+                  href="#"
+                  class="flex items-center text-gray-700 hover:text-gray-800"
+                >
+                  <img
+                    src="assets/images/nigeriaflagicon.svg"
+                    alt=""
+                    class="block h-auto w-5 flex-shrink-0"
+                  />
+                  <span class="ml-3 block text-sm font-medium">NGN</span>
+                  <span class="sr-only">, change currency</span>
+                </a>
+              </div>
+
+              <!-- Compare -->
+              <div class="hidden sm:flex lg:ml-6">
+                <a
+                  href="#"
+                  class="p-2 text-gray-400 hover:text-gray-500 text-lg"
+                >
+                  <span class="sr-only">Compare</span>
+                  <i class="fa-solid fa-rotate"></i>
+                </a>
+              </div>
+
+              <!-- Love -->
+              <div class="ml-4 flow-root lg:ml-6">
+                <a
+                  href="#"
+                  class="group -m-2 flex items-center p-2 text-gray-400 hover:text-gray-500"
+                >
+                  <i class="fa-regular fa-heart text-lg"></i>
+                  <span
+                    class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"
+                    >4</span
+                  >
+                  <span class="sr-only">items in cart, view bag</span>
+                </a>
+              </div>
+
+              <!-- Cart -->
+              <div class="ml-4 flow-root lg:ml-6 relative group">
+                <a
+                  href="#"
+                  class="group -m-2 flex items-center p-2 text-gray-400 hover:text-gray-500"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                  <span
+                    class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"
+                    >0</span
+                  >
+                  <span class="sr-only">items in cart, view bag</span>
+                </a>
+                <div
+                  id="cartModal"
+                  class="hidden group-hover:sm:block absolute top-8 sm:right-0 md:-right-6 bg-white w-96 p-4 rounded-lg shadow-lg z-40 overflow-y-auto"
+                >
+                  <div class="flex justify-between items-center">
+                    <h1 class="text-lg font-semibold mb-2">Shopping Cart</h1>
+                    <a href="#" class="text-blue-600">View</a>
+                  </div>
+                  <ul id="cartContent" class="divide-y divide-gray-200">
+                    <li class="flex gap-2 py-2">
+                      <div class="h-20 w-20 bg-blue-100 rounded-lg flex">
+                        <a href=""
+                          ><img
+                            src="assets/images/garment.jpg"
+                            alt=""
+                            class="rounded-lg w-full h-full object-cover"
+                          />
+                        </a>
+                      </div>
+                      <div class="flex justify-between w-[80%]">
+                        <div class="">
+                          <a href="#">
+                            <p class="font-semibold line-clamp-1">
+                              Yeezy Boost
+                            </p>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Seller:
+                              <span class="font-normal"> Vikings Outlet</span>
+                            </div>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Size:
+                              <span class="font-normal">XXL</span>
+                            </div>
+                          </a>
+                          <button class="text-xs p-1 rounded-sm text-red-800">
+                            Remove
+                            <i class="fa-regular fa-circle-xmark text-xs"></i>
+                          </button>
+                        </div>
+                        <div class="pr-2">
+                          <div class="font-bold float-right">$400.00</div>
+                          <div
+                            class="flex gap-3 items-center justify-center clear-both"
+                          >
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-minus"></i>
+                            </button>
+                            <div
+                              class="flex items-center justify-center rounded-sm"
+                            >
+                              1
+                            </div>
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                          </div>
+                          <label
+                            for=""
+                            class="w-full text-xs text-neutral-600 float-right clear-both flex items-center justify-center"
+                            >Qty</label
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex gap-2 py-2">
+                      <div class="h-20 w-20 bg-blue-100 rounded-lg flex">
+                        <a href=""
+                          ><img
+                            src="assets/images/garment.jpg"
+                            alt=""
+                            class="rounded-lg w-full h-full object-cover"
+                          />
+                        </a>
+                      </div>
+                      <div class="flex justify-between w-[80%]">
+                        <div class="">
+                          <a href="#">
+                            <p class="font-semibold line-clamp-1">
+                              Yeezy Boost
+                            </p>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Seller:
+                              <span class="font-normal"> Vikings Outlet</span>
+                            </div>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Size:
+                              <span class="font-normal">XXL</span>
+                            </div>
+                          </a>
+                          <button class="text-xs p-1 rounded-sm text-red-800">
+                            Remove
+                            <i class="fa-regular fa-circle-xmark text-xs"></i>
+                          </button>
+                        </div>
+                        <div class="pr-2">
+                          <div class="font-bold float-right">$400.00</div>
+                          <div
+                            class="flex gap-3 items-center justify-center clear-both"
+                          >
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-minus"></i>
+                            </button>
+                            <div
+                              class="flex items-center justify-center rounded-sm"
+                            >
+                              1
+                            </div>
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                          </div>
+                          <label
+                            for=""
+                            class="w-full text-xs text-neutral-600 float-right clear-both flex items-center justify-center"
+                            >Qty</label
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex gap-2 py-2">
+                      <div class="h-20 w-20 bg-blue-100 rounded-lg flex">
+                        <a href=""
+                          ><img
+                            src="assets/images/garment.jpg"
+                            alt=""
+                            class="rounded-lg w-full h-full object-cover"
+                          />
+                        </a>
+                      </div>
+                      <div class="flex justify-between w-[80%]">
+                        <div class="">
+                          <a href="#">
+                            <p class="font-semibold line-clamp-1">
+                              Yeezy Boost
+                            </p>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Seller:
+                              <span class="font-normal"> Vikings Outlet</span>
+                            </div>
+                            <div
+                              class="text-sm font-semibold text-neutral-400 line-clamp-1"
+                            >
+                              Size:
+                              <span class="font-normal">XXL</span>
+                            </div>
+                          </a>
+                          <button class="text-xs p-1 rounded-sm text-red-800">
+                            Remove
+                            <i class="fa-regular fa-circle-xmark text-xs"></i>
+                          </button>
+                        </div>
+                        <div class="pr-2">
+                          <div class="font-bold float-right">$400.00</div>
+                          <div
+                            class="flex gap-3 items-center justify-center clear-both"
+                          >
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-minus"></i>
+                            </button>
+                            <div
+                              class="flex items-center justify-center rounded-sm"
+                            >
+                              1
+                            </div>
+                            <button
+                              class="text-neutral-700 disabled:text-neutral-300"
+                            >
+                              <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                          </div>
+                          <label
+                            for=""
+                            class="w-full text-xs text-neutral-600 float-right clear-both flex items-center justify-center"
+                            >Qty</label
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- Total -->
+                  <div
+                    id="cartTotal"
+                    class="mt-4 text-lg font-semibold float-right"
+                  >
+                    Total: $0.00
+                  </div>
+                  <div class="clear-both"></div>
+                  <button
+                    id="closeCartButton"
+                    class="mt-4 w-full bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Check Out
+                  </button>
+                </div>
+              </div>
+              <!-- Account -->
+              <div class="flex sm:hidden lg:ml-6">
+                <a
+                  href="#"
+                  class="p-2 text-gray-400 hover:text-gray-500 text-lg"
+                >
+                  <span class="sr-only">Account</span>
+                  <i class="fa-regular fa-user"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="overflow-hidden">
+        <div
+          class="slideshow-container w-screen h-[70vh] relative overflow-hidden"
+        >
+          <div class="slides fade w-full h-full bg-slate-400">
+            <img
+              src="assets/images/banner.webp"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+          <div class="slides fade w-full h-full bg-slate-400">
+            <img
+              src="assets/images/banner2.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+          <div class="slides fade w-full h-full bg-slate-400">
+            <img
+              src="assets/images/Banner3.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex w-full justify-center gap-2 items-center py-2 absolute bottom-0"
+          >
+            <div
+              class="indicator bg-neutral-400 h-3 w-3 rounded-full hover:bg-neutral-500"
+            ></div>
+            <div
+              class="indicator bg-neutral-400 h-3 w-3 rounded-full hover:bg-neutral-500"
+            ></div>
+            <div
+              class="indicator bg-neutral-400 h-3 w-3 rounded-full hover:bg-neutral-500"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap flex-col md:flex-row bg-neutral-100 mx-4 md:mx-0 gap-2 mb-8 sm:bg-none py-4 mt-4 md:mt-0"
+      >
+        <!-- Column 1 -->
+        <div class="flex-1 px-4">
+          <div
+            class="p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+          >
+            <i
+              class="fa-solid fa-hand-holding-dollar text-5xl text-neutral-300"
+            ></i>
+            <div class="font-medium flex flex-col justify-center items-center">
+              <div>Best Prices & Offers</div>
+              <div class="text-xs text-neutral-700">
+                Steady discount/cashout deals
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div
+          class="flex-1 px-4 border-r-2 border-l-2 border-t-2 border-b-2 md:border-t-0 md:border-b-0 border-neutral-300"
+        >
+          <div
+            class="p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+          >
+            <i class="fa-solid fa-truck-ramp-box text-5xl text-neutral-300"></i>
+            <div class="font-medium flex flex-col justify-center items-center">
+              <div>Swift delivery</div>
+              <div class="text-xs text-neutral-700">
+                24/7 amazing delivery framework
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="flex-1 px-4">
+          <div
+            class="p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+          >
+            <i class="fa-solid fa-boxes-packing text-5xl text-neutral-300"></i>
+            <div class="font-medium flex flex-col justify-center items-center">
+              <div>Easy Return</div>
+              <div class="text-xs text-neutral-700">
+                Customer-first return policy
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 sm:px-12 py-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800">Categories</h2>
+          <div class="flex gap-2 items-center">
+            <a class="text-blue-800" href="#"
+              >Browse all
+              <span class="hidden sm:inline-block">categories</span></a
+            >
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-4 md:grid-cols-8 sm:grid-cols-4 bg-neutral-100 p-4 rounded-lg"
+        >
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 transition-all duration-400 ease-in-out shadow-md bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/shirts.png"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 text-center line-clamp-2 text-sm font-medium text-gray-700 hover:text-gray-800"
+              >
+                Clothings
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 transition-all duration-400 ease-in-out shadow-md bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/garment.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Garments
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 transition-all duration-400 ease-in-out shadow-md bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/jewelries2.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Jeweleries
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 transition-all duration-400 ease-in-out shadow-md bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/harvest.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Harvest
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 shadow-md transition-all duration-400 ease-in-out bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/honey.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Honey
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 shadow-md transition-all duration-400 ease-in-out bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/spiritual.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Spiritual
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 shadow-md transition-all duration-400 ease-in-out bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md font-medium text-center text-gray-700 hover:text-gray-800"
+              >
+                Shoes
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="#">
+              <div
+                class="hover:border-2 shadow-md transition-all duration-400 ease-in-out bg-white h-36 rounded-lg p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/3dshop.png"
+                  class="object-contain max-w-full max-h-full rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-2 line-clamp-2 text-sm sm:text-md text-center font-medium text-gray-700 hover:text-gray-800"
+              >
+                Gifts
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 sm:px-12 py-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800">New Products</h2>
+          <div class="flex gap-2 items-center">
+            <a class="text-blue-800" href="#"
+              >View <span class="hidden sm:inline-block">More</span></a
+            >
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 gap-y-1"
+        >
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:hidden relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quick View Modal Container -->
+        <div
+          id="modal-1"
+          class="modal overflow-y-auto max-h-screen backdrop-blur-sm backdrop-brightness-50 fixed inset-0 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300"
+        >
+          <!-- Modal content -->
+          <div
+            class="relative modal-content bg-white p-4 w-[70%] rounded-lg shadow-lg transform translate-y-[-100%] transition-transform ease-in-out duration-300"
+          >
+            <!-- Close button -->
+            <button class="modal-close absolute right-5 top-5">
+              <i class="fa-regular fa-circle-xmark text-2xl"></i>
+            </button>
+            <!-- Modal content goes here -->
+            <div
+              class="px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 my-8"
+            >
+              <div class="relative">
+                <div
+                  class="bg-white overflow-hidden relative rounded-lg shadow-lg"
+                >
+                  <!-- Slides Container -->
+                  <div
+                    class="w-full h-64 relative transition-transform ease-in-out duration-300 transform translate-x-0"
+                    id="quickview-slider"
+                  >
+                    <!-- Slide 1 -->
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="assets/images/bannerads.jpg"
+                        alt="Slide 1"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="assets/images/boxads.webp"
+                        alt="Slide 2"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="assets/images/banner.webp"
+                        alt="Slide 3"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Image Indicators -->
+                <div
+                  class="my-3 flex items-center justify-center pb-4 space-x-2 w-full"
+                >
+                  <img
+                    src="assets/images/bannerads.jpg"
+                    class="q-indicator cursor-pointer h-16 w-16 rounded-lg bg-gray-400 transition duration-300 focus:outline-none"
+                    alt=""
+                    onclick="goToSlide(0)"
+                  />
+                  <img
+                    src="assets/images/boxads.webp"
+                    class="q-indicator cursor-pointer h-16 w-16 rounded-lg bg-gray-400 transition duration-300 focus:outline-none"
+                    alt=""
+                    onclick="goToSlide(1)"
+                  />
+                  <img
+                    src="assets/images/banner.webp"
+                    class="q-indicator cursor-pointer h-16 w-16 rounded-lg bg-gray-400 transition duration-300 focus:outline-none"
+                    alt=""
+                    onclick="goToSlide(2)"
+                  />
+                </div>
+                <div class="">
+                  <p class="text-lg font-semibold">Description</p>
+                  <p class="text-sm">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos fugiat, minima quis quibusdam veniam doloribus natus
+                    veritatis sit magnam labore, excepturi consequuntur atque
+                    velit reprehenderit recusandae dolores ducimus suscipit
+                    expedita!
+                  </p>
+                </div>
+              </div>
+              <div class="hidden sm:flex w-full px-8 flex-col justify-center">
+                <div class="text-lg font-bold mb-3">Item Name</div>
+                <form
+                  action=""
+                  class="flex flex-col gap-3 w-full justify-center"
+                >
+                  <div class="w-full mx-auto">
+                    <label
+                      for="size-select"
+                      class="block w-full text-gray-700 text-sm font-bold mb-2"
+                      >Select Size</label
+                    >
+                    <div class="relative">
+                      <select
+                        id="size-select"
+                        name="size-select"
+                        class="block w-full px-4 py-2 pr-8 leading-tight bg-white border border-gray-300 rounded appearance-none focus:border-blue-800 focus:outline-none focus:ring focus:ring-blue-200"
+                      >
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full mx-auto">
+                    <label
+                      for="color-select"
+                      class="block w-full text-gray-700 text-sm font-bold mb-2"
+                      >Select Color</label
+                    >
+                    <div class="relative">
+                      <select
+                        id="color-select"
+                        name="size-select"
+                        class="color w-full px-4 py-2 pr-8 leading-tight bg-white border border-gray-300 rounded appearance-none focus:border-blue-800 focus:outline-none focus:ring focus:ring-blue-200"
+                      >
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="flex w-full items-center gap-3 my-4">
+                    <div class="text-5xl font-extrabold">$500</div>
+                    <div
+                      class="text-md font-bold text-neutral-400 line-through"
+                    >
+                      $400
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 w-full">
+                    <div class="relative w-[40%]">
+                      <select
+                        id="color-select"
+                        name="size-select"
+                        class="px-4 w-full py-2 pr-8 leading-tight bg-white border border-gray-300 rounded appearance-none focus:border-blue-800 focus:outline-none focus:ring focus:ring-blue-200"
+                      >
+                        <option value="option1">1</option>
+                        <option value="option2">2</option>
+                        <option value="option3">3</option>
+                      </select>
+                    </div>
+                    <button
+                      class="p-2 rounded-lg w-[60%] bg-blue-800 text-neutral-100"
+                    >
+                      <span
+                        >Add to Cart <i class="ml-2 fa-solid fa-cart-plus"></i
+                      ></span>
+                    </button>
+                  </div>
+                </form>
+                <div class="mx-auto my-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <!-- First Column -->
+                    <div class="flex flex-col gap-2">
+                      <div class="flex gap-2 items-center">
+                        <span class="font-bold">Brand:</span>
+                        <span class="line-clamp-1 text-neutral-600"
+                          >Swift Solut</span
+                        >
+                      </div>
+                      <div class="flex gap-2 items-center">
+                        <span class="font-bold">Category:</span>
+                        <span class="line-clamp-1 text-neutral-600"
+                          >Garment</span
+                        >
+                      </div>
+                      <div class="flex gap-2 items-center">
+                        <span class="font-bold">Vendor:</span>
+                        <span class="line-clamp-1 text-neutral-600"
+                          >Ojay Clothings</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="flex flex-col gap-2">
+                      <div class="flex gap-2 items-center">
+                        <span class="font-bold">Product SKU:</span>
+                        <span class="line-clamp-1 text-neutral-600">S123</span>
+                      </div>
+                      <div class="flex gap-2 items-center">
+                        <span class="font-bold">Stock:</span>
+                        <span
+                          class="line-clamp-1 text-white p-2 bg-blue-800 rounded-lg"
+                          >Garment</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 sm:px-12 py-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-neutral-800">Featured Products</h2>
+          <div class="flex gap-2 items-center">
+            <a class="text-blue-800" href="#"
+              >View <span class="hidden sm:inline-block">More</span>
+            </a>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        >
+          <div class="relative hidden md:block">
+            <div
+              class="bg-neutral-200 p-4 h-full rounded-lg flex justify-between items-center"
+            >
+              <img
+                src="./assets/images/canvasgif.gif"
+                class="object-contain max-w-full max-h-full rounded-lg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative group transform transition-transform scale-100 hover:scale-95 duration-500"
+          >
+            <div
+              class="absolute z-10 left-0 top-2 w-16 h-6 text-sm text-white bg-blue-800 flex items-center justify-center"
+            >
+              50% off
+            </div>
+            <div
+              class="absolute inset-0 hidden group-hover:sm:flex z-10 h-10 w-full gap-4 items-center justify-center top-24 bg-neutral-50"
+            >
+              <i class="cursor-pointer fa-solid fa-rotate"></i>
+              <i class="cursor-pointer fa-regular fa-heart"></i>
+              <i
+                class="modal-trigger cursor-pointer fa-regular fa-eye"
+                data-modal-target="modal-1"
+              ></i>
+            </div>
+            <a href="#">
+              <div
+                class="bg-white p-4 h-32 sm:h-60 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <img
+                  src="./assets/images/shoe.jpg"
+                  class="object-cover h-full w-full rounded-lg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <button
+              class="inset-0 hidden group-hover:sm:block absolute text-neutral-100 z-10 left-0 right-0 top-48 h-12 bg-blue-800 rounded-b-lg text-center"
+            >
+              <i class="mr-2 fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+            <div
+              class="flex justify-between sm:gap-2 items-center py-2 flex-wrap"
+            >
+              <div>
+                <div
+                  class="font-bold text-sm sm:text-md line-clamp-1 text-neutral-800"
+                >
+                  Yeezy Boost
+                </div>
+                <div class="text-sm hidden sm:block text-neutral-600">
+                  Men's fashion
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">$400.00</div>
+                <div class="text-xs text-neutral-400 line-through">$200.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 sm:px-12 py-8 showcase overflow-hidden">
+        <div
+          class="showcase-wrapper custom-scroll rounded-lg flex gap-5 bg-neutral-100 p-4 sm:p-8 flex-nowrap overflow-x-auto"
+        >
+          <div
+            class="showcase-item relative min-w-[90%] sm:min-w-[40%] p-2 h-56 bg-white flex justify-between items-center rounded-lg"
+          >
+            <img
+              src="assets/images/salebanner.gif"
+              class="object-cover h-full w-full rounded-lg"
+              alt=""
+            />
+            <button
+              class="p-2 rounded-lg bg-neutral-800 text-neutral-100 font-medium absolute left-5 bottom-5"
+            >
+              Shop Now <i class="ml-2 fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div
+            class="showcase-item relative min-w-[90%] sm:min-w-[40%] p-4 h-56 bg-white flex justify-between items-center rounded-lg"
+          >
+            <img
+              src="assets/images/bagads.gif"
+              class="object-cover h-full w-full rounded-lg"
+              alt=""
+            />
+            <button
+              class="p-2 rounded-lg bg-neutral-800 text-neutral-100 font-medium absolute left-5 bottom-5"
+            >
+              Shop Now <i class="ml-2 fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div
+            class="showcase-item relative min-w-[90%] sm:min-w-[40%] p-4 h-56 bg-white flex justify-between items-center rounded-lg"
+          >
+            <img
+              src="assets/images/shopads.webp"
+              class="object-cover h-full w-full rounded-lg"
+              alt=""
+            />
+            <button
+              class="p-2 rounded-lg bg-neutral-800 text-neutral-100 font-medium absolute left-5 bottom-5"
+            >
+              Shop Now <i class="ml-2 fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div
+            class="showcase-item relative min-w-[90%] sm:min-w-[40%] p-4 h-56 bg-white flex justify-between items-center rounded-lg"
+          >
+            <img
+              src="assets/images/boxads.webp"
+              class="object-cover h-full w-full rounded-lg"
+              alt=""
+            />
+            <button
+              class="p-2 rounded-lg bg-neutral-800 text-neutral-100 font-medium absolute left-5 bottom-5"
+            >
+              Shop Now <i class="ml-2 fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mx-8 sm:mx-12 sm:px-12 p-0 sm:py-8 bg-none sm:bg-neutral-100 rounded-lg"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Column 1 -->
+          <div class="sm:px-4">
+            <div
+              class="font-bold h-10 sm:px-4 flex items-center justify-between"
+            >
+              <span class="text-lg">Flash Sales</span>
+              <a href="#">
+                <span class="text-md text-neutral-600"
+                  >More <i class="fa-solid fa-arrow-right-long"></i
+                ></span>
+              </a>
+            </div>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/jeweleries.webp"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/honey.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/shoe.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Column 2 -->
+          <div class="sm:px-4">
+            <div
+              class="font-bold h-10 sm:px-4 flex items-center justify-between"
+            >
+              <span class="text-lg">Special Offers</span>
+              <a href="#">
+                <span class="text-md text-neutral-600"
+                  >More <i class="fa-solid fa-arrow-right-long"></i
+                ></span>
+              </a>
+            </div>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/jeweleries.webp"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/honey.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/shoe.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Column 3 -->
+          <div class="sm:px-4">
+            <div
+              class="font-bold h-10 sm:px-4 flex items-center justify-between"
+            >
+              <span class="text-lg">Recently Added</span>
+              <a href="#">
+                <span class="text-md text-neutral-600"
+                  >More <i class="fa-solid fa-arrow-right-long"></i
+                ></span>
+              </a>
+            </div>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/jeweleries.webp"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/honey.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="sm:p-4 h-28 flex gap-5 items-center hover:bg-neutral-200 rounded-lg"
+              >
+                <div
+                  class="w-24 h-24 flex justify-center items-center bg-neutral-200 shadow-md rounded-lg"
+                >
+                  <img
+                    src="./assets/images/shoe.jpg"
+                    alt=""
+                    class="object-cover w-full h-full rounded-lg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="font-medium line-clamp-1">Ying's Bracelet</div>
+                  <div class="text-neutral-400 text-sm line-clamp-1">
+                    2/10 items remaining
+                  </div>
+                  <div>
+                    <div class="font-bold">$400.00</div>
+                    <div class="text-xs text-neutral-400 line-through">
+                      $200.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 sm:px-12 py-8">
+        <div class="bg-neutral-200 h-96 relative group rounded-lg">
+          <img
+            src="./assets/images/bannerads.jpg"
+            class="object-fill w-full h-full rounded-lg transition-transform transform hover:scale-105 hover:brightness-75"
+            alt=""
+          />
+          <div
+            class="absolute cursor-pointer inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-lg"
+          ></div>
+        </div>
+      </div>
+      <div class="px-8 sm:px-12 py-8">
+        <div class="rounded-lg bg-neutral-100 p-4 sm:p-8">
+          <div class="w-full mb-8">
+            <div class="text-2xl font-extrabold w-full text-center">
+              Trusted by Millions Worldwide
+            </div>
+            <div class="text-md w-full text-center">
+              Join our loyal community of happy shoppers 🥰
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <!-- Column 1 -->
+            <div class="w-full my-2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4">
+              <div
+                class="bg-white shadow-xl p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+              >
+                <div
+                  class="text-3xl md:text-5xl font-extrabold text-yellow-600"
+                >
+                  600+
+                </div>
+                <div class="text-md font-semibold font-mono">Items Sold</div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="w-full my-2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4">
+              <div
+                class="bg-white shadow-xl p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+              >
+                <div
+                  class="text-3xl md:text-5xl font-extrabold text-yellow-600"
+                >
+                  50+
+                </div>
+                <div class="text-md font-semibold font-mono">Vendors</div>
+              </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="w-full my-2 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 px-4">
+              <div
+                class="bg-white shadow-xl p-4 rounded-lg flex flex-col gap-2 items-center justify-center"
+              >
+                <div
+                  class="text-3xl md:text-5xl font-extrabold text-yellow-600"
+                >
+                  202+
+                </div>
+                <div class="text-md font-semibold font-mono">Users</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="p-4 bg-blue-800 text-neutral-100">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2 mb-16 sm:mb-0"
+      >
+        <!-- Column 3 -->
+        <div class="p-8">
+          <div class="text-md font-bold">Need Help ?</div>
+          <ul class="text-sm">
+            <li class="hover:underline"><a href="#">Contact us</a></li>
+            <li class="hover:underline"><a href="#">Support</a></li>
+            <li class="hover:underline"><a href="#">FAQ</a></li>
+            <li class="hover:underline">
+              <a href="#">Report a Problem</a>
+            </li>
+          </ul>
+          <div class="text-md font-bold mt-8">Useful Links ?</div>
+          <ul class="text-sm">
+            <li class="hover:underline">
+              <a href="#">How to shop on oshoffa marketplace</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Delivery options and timeline</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Guideline on returning items</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Corporate or Bulk Purchase</a>
+            </li>
+            <li class="hover:underline">Report a Product<a href="#"></a></li>
+            <li class="hover:underline">Return Policy<a href="#"></a></li>
+          </ul>
+        </div>
+        <!--Column 2-->
+        <div>
+          <div class="p-8">
+            <div class="text-md font-bold">About Oshoffa Marketplace</div>
+            <ul class="text-sm">
+              <li class="hover:underline"><a href="#">About us</a></li>
+              <li class="hover:underline"><a href="#">Support Centre</a></li>
+              <li class="hover:underline"><a href="#">Contact Us</a></li>
+              <li class="hover:underline"><a href="#">Careers</a></li>
+              <li class="hover:underline"><a href="#">Offices</a></li>
+              <li class="hover:underline">
+                <a href="#">Delivery Information</a>
+              </li>
+              <li class="hover:underline">
+                <a href="#">Terms and conditions</a>
+              </li>
+              <li class="hover:underline"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="text-md font-bold mt-8">Socials</div>
+            <ul class="flex gap-5 text-3xl items-center">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Column 3-->
+        <div>
+          <div class="p-8">
+            <div class="text-md font-bold">Make money with Oshoffa Market</div>
+            <ul class="text-sm">
+              <li class="hover:underline">
+                <a href="#">Sell on oshoffa market</a>
+              </li>
+              <li class="hover:underline"><a href="#">Vendor'place</a></li>
+              <li class="hover:underline">
+                <a href="#">Become a Logistic partner</a>
+              </li>
+              <li class="hover:underline">
+                <a href="#">Partner with Oshoffa market</a>
+              </li>
+            </ul>
+            <div class="text-md font-bold mt-8">Our Offices</div>
+            <div class="mb-2">
+              <div class="text-sm">Oshoffa Market Close, Gwagalada Abuja</div>
+              <div class="text-sm">
+                <span class="font-semibold italic">Tel: </span> 08124096688
+              </div>
+              <div class="text-sm">
+                <span class="font-semibold italic">Email: </span>
+                <a href="mailto:oshoffaamarket@mail.com" class="hover:underline"
+                  >mailus@oshoffamarket.com</a
+                >
+              </div>
+            </div>
+            <div class="mb-2">
+              <div class="text-sm">Oshoffa Market Close, Sabo Gari. Kano</div>
+              <div class="text-sm">
+                <span class="font-semibold italic">Tel: </span>
+                08124096688
+              </div>
+              <div class="text-sm">
+                <span class="font-semibold italic">Email: </span>
+                <a href="mailto:oshoffamarket@mail.com" class="hover:underline"
+                  >mailus@oshoffamarket.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/showcase.js"></script>
+    <script src="./js/headline.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/quickview.js"></script>
+  </body>
+</html>

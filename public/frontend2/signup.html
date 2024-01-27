@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/regular.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="grid grid-cols-1 sm:grid-cols-2 h-screen overflow-hidden">
+      <div class="hidden sm:block p-4 gap-2 bg-blue-800 relative">
+        <div class="absolute z-10 bottom-0 w-full h-[100%]">
+          <img
+            class="object-cover w-full h-full"
+            src="assets/images/3dshop.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="p-12 overflow-auto">
+        <div class="text-2xl sm:text-3xl font-black">Create Account</div>
+        <div class="text-sm">
+          Kindly fill the form below to create an account
+        </div>
+        <div class="pt-8">
+          <form action="">
+            <div class="mb-4">
+              <label htmlFor="" class="text-md text-neutral-600"
+                >Username</label
+              >
+              <input
+                name="username"
+                placeholder="Johndoe"
+                type="text"
+                class="mt-2 border-neutral-200 rounded-3xl shadow-lg border-[1.3px] outline-none focus:border-primary py-3 px-4 text-sm w-full"
+              />
+            </div>
+            <div class="mb-4">
+              <label htmlFor="" class="text-md text-neutral-600">Email</label>
+              <input
+                name="email"
+                placeholder="example@email.com"
+                type="email"
+                class="mt-2 border-neutral-200 rounded-3xl shadow-lg border-[1.3px] outline-none focus:border-primary py-3 px-4 text-sm w-full"
+              />
+            </div>
+            <div class="mb-4 relative">
+              <label htmlFor="" class="text-md text-neutral-600"
+                >Password</label
+              >
+              <input
+                name="password"
+                placeholder="e.g ABCdef!x@"
+                type="password"
+                class="mt-2 border-neutral-200 rounded-3xl shadow-lg border-[1.3px] outline-none focus:border-primary py-3 px-4 text-sm w-full"
+              />
+              <i class="absolute right-4 top-12 fa-regular fa-eye"></i>
+            </div>
+            <div class="mb-4 relative">
+              <label htmlFor="" class="text-md text-neutral-600"
+                >Confirm Password</label
+              >
+              <input
+                name="password"
+                placeholder="e.g ABCdef!x@"
+                type="password"
+                class="mt-2 border-neutral-200 rounded-3xl shadow-lg border-[1.3px] outline-none focus:border-primary py-3 px-4 text-sm w-full"
+              />
+              <i class="absolute right-4 top-12 fa-regular fa-eye"></i>
+            </div>
+            <div class="">
+              <label class="flex items-center">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-blue-800"
+                />
+                <span class="ml-2 text-gray-700 text-sm md:text-md"
+                  >I agree with the Terms and Conditions</span
+                >
+              </label>
+            </div>
+            <div class="py-1 mt-2">
+              <button
+                class="w-full py-3 rounded-3xl bg-blue-800 text-neutral-50"
+              >
+                Create Account
+              </button>
+            </div>
+          </form>
+          <div class="mb-10 py-1 sm:mb-0 text-center">
+            <span class="text-sm"
+              >Have an account ?
+              <a href="login.html" class="text-blue-800 font-medium underline"
+                >Sign in</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
